@@ -1,3 +1,9 @@
 version: "3.8"
 
 services:
+  nodews:
+    build: .
+    image: casara/maratona_full_cycle_ws:latest
+    container_name: maratona_full_cycle_ws
+    ports:
+      - "3000:3000"
